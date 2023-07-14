@@ -4,14 +4,19 @@ import {Helmet} from 'react-helmet'
 
 const Layout = ({title,children}) => {
   return (
-    <div>Layout</div>
-    <Helmet>
-        <title>
-            {title}
-        </title>
-        <link rel="icon" href=" " type='image/png' sizes='16X16' />
-    </Helmet>
-    <div>{children}</div>
+    <div>
+            <Helmet>
+               
+                <link
+                    rel="icon"
+                    href="flogo.png"
+                    type="image/png"
+                    sizes="16x16"
+                />
+                 <title>{title}</title>
+            </Helmet>
+            <div>{children}</div>
+        </div>
 
   )
 }
